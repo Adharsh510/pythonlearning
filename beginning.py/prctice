@@ -1,0 +1,48 @@
+n=int(input())
+
+if n%2==0:
+    print("Even")
+else:
+    print("Odd")
+
+n=int(input())
+if n%2==0:
+    print("It Is Even no")
+else:
+    print("it is Odd")
+
+n= int(input())
+
+if n<=1:
+        print(" Not a Prime")
+else:
+        for i in range (2,n):
+            if n%i==0:
+                print ("not prime")
+                break
+            else:
+                print ("it is a prime")
+
+n= int(input())
+if n<=1:
+     print("Not A prime")
+else:
+     for i in range (2,n):
+          if n%i==0:
+               print("not a prime")
+               break
+          else:
+               print ("prime")
+n=int(input())
+rev=0
+while n>0:
+     digit=n%10
+     rev=rev*10+digit
+     n=n//10
+     print(rev)
+     
+n= input("enter a string")
+rev=""
+for ch in n:
+     rev=ch+rev
+     print(rev)

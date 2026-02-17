@@ -1,0 +1,38 @@
+for i in range(1,6):
+        print(i)
+for i in range(1,11):
+        print(i)        
+
+n=5
+s=0
+for i in range(1,n+1):
+        s=s+i   
+print("sum is",s)
+
+n=5
+if n%2==0:
+        print("even")
+else:
+        print("odd")
+
+s="Infosys"
+count=0
+for ch in s:
+        count+=1
+print("length of string is",count)
+
+x="adarsh"
+count=0
+for ch in x:
+        count+=1
+print("length of string is",count)
+
+x="Infosys"
+y="python"
+vowels="aeiou"
+count=0
+
+for ch in y:
+        if ch in vowels:
+                count+=1
+print("number of vowels in string is",count)

@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Weather App</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(to right, #4facfe, #00f2fe);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .container {
+            background: white;
+            padding: 25px;
+            border-radius: 10px;
+            width: 300px;
+            text-align: center;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+        }
+
+        input {
+            padding: 8px;
+            width: 70%;
+        }
+
+        button {
+            padding: 8px;
+            cursor: pointer;
+        }
+
+        .weather-info {
+            margin-top: 15px;
+        }
+
+        .error {
+            color: red;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="container">
+    <h2>Weather App</h2>
+
+    <input type="text" id="city" placeholder="Enter city">
+    <button onclick="getWeather()">Search</button>
+
+    <div class="weather-info" id="weatherInfo"></div>
+    <div class="error" id="error"></div>
+</div>
+
+<script>
+    const apiKey = "aa05d4f795d5d4fdbd2a4f0e1ae38746";
+
+    async function getWeather() {
+        const city = document.getElementById("city").value;
+        const weatherInfo = document.getElementById("weatherInfo");
+        const error = document.getElementById("error");
+
+        weatherInfo.innerHTML = "";
+        error.innerHTML = "";
+
+        if (!city) {
+            error.innerHTML = "Please enter a city name.";
+            return;
+        }
+
+        try {
+            const response = await fetch(
+                `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`
+            );
+
+            if (!response.ok) {
+                throw new Error("City not found");
+            }
+
+            const data = await response.json();
+
+            weatherInfo.innerHTML = `
+                <h3>${data.name}</h3>
+                <p>Temperature: ${data.main.temp}°C</p>
+                <p>Humidity: ${data.main.humidity}%</p>
+                <p>Condition: ${data.weather[0].description}</p>
+            `;
+        } catch (err) {
+            error.innerHTML = err.message;
+        }
+    }
+</script>
+
+</body>
+</html>

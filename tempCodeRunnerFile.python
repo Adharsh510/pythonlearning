@@ -1,0 +1,32 @@
+#print ("hello reddy")
+
+#details = input("enter name: ")
+print ("details")
+
+f=float(input("enter fahrenheit: "))
+c =(f-32)* 9/5
+print("celsius=" ,c)
+
+age = int(input("enter age: "))
+if age>=18:
+    print("eligible for kiss")
+
+    age = int(input("enter age: "))
+if age>=18:
+    print("eligible for kiss")
+else:
+    print("not eligible for kiss")
+
+    num =int(input("enter a number: "))
+    if num %2==0:
+        print("even")
+    else:
+        print("odd")
+
+        marks =int(input("enter a number: "))
+    if marks >=75:
+        print("distintion")
+    elif marks>=60:
+        print("first class")
+    elif marks>=50:
+        print("fail")

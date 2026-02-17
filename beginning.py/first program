@@ -1,0 +1,11 @@
+print("hello world")
+
+marks =int(input("enter a number: "))
+if marks >=75:
+        print("distintion")
+elif marks>=60:
+        print("first class")
+elif marks>=35:
+        print("Pass")
+elif marks<=34:
+        print("Fail")   
