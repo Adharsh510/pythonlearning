@@ -1,0 +1,6 @@
+char_a='A'
+ascii_a = ord(char_a)
+print(ascii_a)
+char_b='B'
+ascii_b = ord(char_b)
+print(ascii_b)
