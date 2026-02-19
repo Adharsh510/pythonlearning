@@ -28,4 +28,4 @@
   #      i+=1
 #print("sum = ", sum)   
 
-print ("Hello Nnanna")
+print (10+20*30)

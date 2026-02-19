@@ -1,0 +1,41 @@
+#Membership operator
+fruits = ['apple', 'grapes', 'pineapple', 'banana']
+print('apple' in fruits)
+is_mango = 'mango' in fruits
+print(is_mango)
+
+#identity operator 
+name1='adhi'
+name2='adhi'
+resut_is_not=name1 is not name2
+print(resut_is_not)
+
+num1=10
+num2=30
+resut_is_not1=num1 is not num2
+print(resut_is_not1)
+
+#logical operator
+a=3
+b=4
+c=a&b
+print(c)
+
+a=2
+b=3
+print(a|b)
+
+c= a^b
+print(c)
+
+d= ~a
+print(d)
+
+#bitwise shift operator
+a=4
+result=a<<2
+print(result)
+
+result1=a>>2
+print(result1) 
+

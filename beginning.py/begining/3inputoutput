@@ -1,0 +1,8 @@
+#input out put statements
+
+name=input("enter your name: ")
+print("my name is :" , name)
+
+Name=input("enter your name: ")
+age=int(input("enter your age: "))
+print("Hello ,"+ Name + " your age is " , age, "you are eligible for voting")

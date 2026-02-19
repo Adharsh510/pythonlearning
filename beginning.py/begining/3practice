@@ -1,0 +1,41 @@
+name=input("enter your name: ")
+print("hello, " + name + "!")
+
+name2=input("enter your name: ")
+print("Hello ",name2,sep=",",end="!")
+
+num=int(input("enter a number: "))
+print("You entered: ", num)
+
+num1=float(input("enter a number: "))
+print("value of pi is: ", num1,sep="")
+
+a=input("enter a number: ")
+x,y,z=a.split(" ")
+sum=int(x)+int(y)+int(z)
+print("Sum of the numbers is:", sum)
+
+name2=input("enter your name: ")
+age2=int(input("enter your age: "))
+print("Name: ", name2, "Age: ", age2, sep=" ")
+
+ipn=input("Name and age: ")
+name, age = ipn.split(",")
+print("Name: ", name, ", Age: ", age)
+#eample 6
+n=int(input("enter n : "))
+print("Count Down 5 4 3 2 1 " , end= "Blast Off")
+
+
+#eample 7
+a,b=input("Arthmetic operations: ").split(",")
+x=int(a)
+y=int(b)
+print("Addition:",x+y, "Subtraction:",x-y, "Multiplication:",x*y, "Division:",x/y)
+
+#eample8
+A,B=input("Enter two numbers: ").split(",")
+a=int(A)
+b=a
+a=int(B)
+print(a>b, a<b, a==b, a!=b)
