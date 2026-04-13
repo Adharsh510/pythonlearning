@@ -1,0 +1,5 @@
+double=int(input("Give the radius of circle: "))
+a=3.14*(double**2)
+print("Area of circle is : ", a)
+print("Area of circle is : ", a, sep="")
+print(f"Area of circle is : {a}")

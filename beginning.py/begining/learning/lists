@@ -1,0 +1,29 @@
+#fruits=["Apple", "Banana","Mango", "Grapes"]
+#print(fruits[0])
+#print(fruits[-1])
+
+#fruits.append("Pine apple")
+#fruits.remove("Banana")
+#print(fruits)
+
+#for fruit in fruits:
+ #   print(fruit)
+  #  print(len(fruits))
+
+student_names=["Adarsh", "Venkatesh", "Suresh", "Ramesh" , "Mahesh"]
+for name in student_names:
+    print(name)
+
+numbers=[1, 2, 3, 4, 5,9,10,19,43,50]
+for number in numbers:
+    if number>5:
+        print(number)
+
+list_ofnumbers=[1, 2, 3, 4, 5,9,10,19,43,50]      
+def sum_and_average (list_ofnumbers):
+ total=sum(list_ofnumbers)
+ average=total/len(list_ofnumbers)
+ return total, average
+result=sum_and_average(list_ofnumbers)
+print("The sum of the numbers is:", result[0])
+print("The average of the numbers is:", result[1])

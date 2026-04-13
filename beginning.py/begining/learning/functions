@@ -1,0 +1,38 @@
+def greet(name):
+    print ("Hello, " + name + "!")
+greet("Adarsh")   
+greet("python") 
+
+def add(a,b):
+    result = a + b
+    return result
+answer = add(5, 10)
+print("The sum of 5 and 10 is:", answer)
+
+def greet(name):
+    return "Hello, " + name + " Welcome to Python!"
+message = greet("Adarsh")
+print(message)
+
+def arthmatic_operations(a, b):
+    sum_result = a + b
+    difference = a - b
+    product = a * b
+    division = a / b
+    return sum_result, difference, product, division
+answer = arthmatic_operations(10, 5)
+print("The sum of 10 and 5 is:", answer[0])
+print("The difference of 10 and 5 is:", answer[1])
+print("The product of 10 and 5 is:", answer[2])
+print("The division of 10 and 5 is:", answer[3])
+
+def check_even_odd(a):
+    if a % 2 == 0:
+        return "Even"
+    else:
+        return "Odd"
+print(check_even_odd(3))
+print(check_even_odd(8))
+print(check_even_odd(15))
+print(check_even_odd(22))
+print(check_even_odd(7))

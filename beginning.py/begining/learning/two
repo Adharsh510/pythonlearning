@@ -1,0 +1,11 @@
+number=int(input("Enter a number: "))
+if number >=1 and number <= 10:
+    print("Small Number")
+elif number  >=11 and number <=50:
+    print("Medium Number")
+elif number  >=51 and number <=100:
+    print("Large Number")
+else:
+    print("very Large Number")
+
+

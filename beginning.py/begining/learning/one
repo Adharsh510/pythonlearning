@@ -1,0 +1,30 @@
+print ("Hello, World!")
+
+x = 10
+if x % 2 == 0:
+    print("x is even")
+else:
+    print("x is odd")
+
+a = 5
+b = 10
+
+print("The sum of a and b is:", a + b)
+
+name="Adarsh"
+Age=24
+city="Hyderabad"
+is_employed=False
+print("My name is", name, "I am", Age, "years old, " "I live in", city, "and employed", is_employed )
+
+name="Alex"
+Age=23
+city="New York"
+gender="Male"
+is_employed=True
+print("My name is", name, "I am", Age, "years old, " "I live in", city, "my gender is ", gender,"and employed", is_employed )
+
+name=input("Enter your name: ")
+age=int(input("Enter your age: "))
+birth_year=input("Enter your birth year: ")
+print("Hello", name, "you are", age , "years old and  you were born in", birth_year)
